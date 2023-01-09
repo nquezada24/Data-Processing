@@ -22,13 +22,26 @@
    <main class="wrapper">
  
     <h2 class="subheader">Place form code below:</h2>
-    <p>form goes here</p>
-    <h3>Page Origins</h3>
-    <p>The HTML/CSS comes from Sara Newman's Web Fundamentals class as taught at Seattle Central. This page provides a basis for students to build a responsive portal page.</p>
-    <p>The mobile navigation originates from <a href="https://www.w3schools.com/howto/howto_js_mobile_navbar.asp" target="_blank">W3Schools</a></p>
+    <form action="" method="get" class="main-form">
+      <div>
+        <label for="FirstName">First Name</label><br>
+        <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required autofocus>
+      </div>
+      <div>
+        <label for="LastName">Last Name</label><br>
+        <input type="text" name="LastName" id="LastName" placeholder="Last Name" required>
+      </div>
+      <div>
+        <label for="Email">Email</label><br>
+        <input type="text" name="Email" id="Email" placeholder="Email" required>
+      </div>  
+      <div>
+        <input type="submit" value="Submit it!">
+      </div>
+    </form>
     <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Natalia Quezada Evans, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
