@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/main-form.css">
  </head>
  <body>
      <header>
@@ -33,8 +33,42 @@
       </div>
       <div>
         <label for="Email">Email</label><br>
-        <input type="text" name="Email" id="Email" placeholder="Email" required>
-      </div>  
+        <input type="Email" name="Email" id="Email" placeholder="Email" required>
+      </div> 
+      <div>
+        <label for="Address">Address</label><br>
+        <input type="Address" name="LastName" id="Address" placeholder="Address" required>
+      </div> 
+      <div>
+        <label for="State">State</label><br>
+        <select name="State" id="State" required>
+          <option value="">Please select a state</option>
+          <option value="AK">Alaska</option>
+          <option value="CA">California</option>
+          <option value="OR">Oregon</option>
+          <option value="WA">Washington</option>
+        </select>        
+      </div> 
+      <div>
+        <fieldset>
+          <legend> Would you like to join our mailing list?</legend>
+          <label><input type="radio" name="JoinMailingList" value="Yes" required> Yes</label><br>
+          <label><input type="radio" name="JoinMailingList" value="No"> No</label>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend> Intrested In?</legend>
+          <label><input type="checkbox" name="IntrestedIn" value="Website" required> Website</label><br>
+          <label><input type="checkbox" name="IntrestedIn" value="OnlineCalendar"> Online calander</label><br>
+          <label><input type="checkbox" name="IntrestedIn" value="ContactForm"> Contact Form</label><br>
+          <label><input type="checkbox" name="IntrestedIn" value="Lollipops"> Complemantary Lollipops</label>
+        </fieldset>
+      </div>
+      <div>
+        <label for="Comments">Comments</label><br>
+        <textarea name="Comments" id="Comments" cols="36" rows="6"></textarea>
+      </div> 
       <div>
         <input type="submit" value="Submit it!">
       </div>
